@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+ <meta charset="utf-8" />
+ <title>Structure for HTML5 webpages</title>
+</head>
+
+<body>
+
+<!-- ***************** -->
+<!-- Layout structrues -->
+<!-- ***************** -->
+
+<!-- Biggest Container -->
+<section id="container">
+
+<!-- Mutable Sections -->
+<section id="mutableSections">
+
+<!-- tTag# -->
+<!-- Nav Banner -->
+<section id="navBanner" class="navBanner">
+ <button id="backButton" class="elementsDisplay backButton"></button>
+ <span id="navTitle" class="navTitle">Nav Title</span> 
+ <button id="editButton" class="elementsDisplay editButton"></button>
+</section> <!-- end of Nav Banner --><!-- tTag# -->
+
+<!-- Section 1 -->
+<section id="section1" class="elementsDisplay mutable">
+<!-- Structure of ul With select ctLiUno ctLiDuo ctLiTrio ctLiArrow -->
+<ul class="ctUl">
+ <li class="ctLi">
+  <select name="value" class="ctSelect">
+   <option value="value1">Value 1</option>
+   <option value="value2">Value 2</option>
+   <option value="value3">Value 3</option>
+   <option value="value4">Value 4</option>
+   <option value="value5">Value 5</option>
+   <option value="value6" selected>Value 6</option>
+   <option value="value7">Value 7</option>
+   <option value="value8">Value 8</option>
+   <option value="value9">Value 9</option>
+   <option value="value10">Value 10</option>
+  </select>
+ </li>
+</ul>
+<ul class="ctUl">
+ <li class="ctLiUno">
+  <span class="liLeftText">Left Text</span>
+  <span id="idLi1" class="liRightText">Right Text</span>
+ </li>
+ <li class="ctLiDuo">
+  <div>
+   <span class="liLeftText">Left Text</span><br>
+   <span class="liLeftText">Left Text</span>
+  </div>
+  <div>
+   <span id="idLi21" class="liRightText">Right Text</span><br>
+   <span id="idLi22" class="liRightText">Right Text</span>
+  </div>
+ </li>
+ <li class="ctLiTrio">
+  <div>
+   <span class="liLeftText">Left Text</span><br>
+   <span class="liLeftText">Left Text</span><br>
+   <span class="liLeftText">Left Text</span>
+  </div>
+  <div>
+   <span id="id31" class="liRightText">Right Text</span><br>
+   <span id="id32" class="liRightText">Right Text</span><br>
+   <span id="id33" class="liRightText">Right Text</span>
+  </div>
+ </li>
+</ul>
+<p>Intermediate text<br>Additional intermediate text</p>
+<ul class="ctUl">
+ <li class="ctLiArrow">
+  <span>Text with arrow</span>
+ </li>
+</ul>
+</section><!-- End of Section 1 -->
+
+<!-- Article -->
+<article>
+ <p>var name type = expression<br>
+    Either the type or the expression part may be omitted, but not both.<br>
+    If the expression is omitted, the initial value is the zero value for the type, which is zero for numbers, false for booleans, "" for strings, and nil for interfaces and reference types (slice, pointer, map, channel, function).<br>
+    The zero value of an aggregate type like an array or a struct has the zero value of all of its elements or fields.
+ </p>
+ <p>var i, j, k int</p>
+ <p>var b, f, s = true, 2.3, "four"</p>
+</article> <!-- end of Article -->
+
+</section><!-- end of Mutable Sections -->
+
+</section> <!-- end of Biggest Container -->
+
+</body>
+
+</html>

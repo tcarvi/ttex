@@ -1,0 +1,1351 @@
+<!-- ************************************************* -->
+<!-- All HTML5 tag structures ************************ -->
+<!-- Fonte: https://www.w3schools.com/tags/default.asp -->
+<!-- ************************************************* -->
+
+
+<!-- Defines the HTML5 document type -->
+<!-- <!doctype html>  -->
+
+
+
+<!-- <a> defines a hyperlink -->
+<a href="http://www.tcarvi.com.br">TCARVI</a>
+<a href="mailto:tcarvi@me.com">Send email</a>
+<p>Feedback: <a href="mailto:authors@example.com?Subject=Hello">Send Mail to Authors with Subject</a></p>
+<a href="tel:+4733378901">+47 333 78 901</a>
+<a href="#section2">Go to Section 2</a>
+<a href="javascript:alert('Hello World!');">Execute JavaScript</a>
+<a href="https://google.com" target="_blank"><img src="images/google-image.png" alt="Image navigating to Google"></a>
+<!-- Tag atributes: -->
+<!-- download=filename href=URL hreflang=language_code media=media_query ping=list_of_URLs referrerpolicy=Value rel=Value target=Value type=media_type -->
+<!-- Default CSS Design: -->
+<!-- a:link, a:visited {color: (internal value);text-decoration: underline;cursor: auto;} -->
+<!-- a:link:active, a:visited:active {color: (internal value);} -->
+
+
+
+<!-- <abbr> defines an abbreviation or an acronym -->
+<abbr title="World Health Organization">WHO</abbr>
+<!-- Default CSS Design: -->
+<!-- abbr {display: inline;} -->
+
+
+
+<!-- <address> defines contact information for the author/owner of a document -->
+<address>
+Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+<!-- Default CSS Design: -->
+<!-- address {display: block; font-style: italic;} -->
+
+
+
+<!-- <area> defines an area inside an image map -->
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+<!-- Tag atributes: -->
+<!-- alt=text coords=coordinates download=filename href=URL hreflang=language_code media=media_query referrerpolicy=VALUE rel=VALUE shape=VALUE target=VALUE type=media_type -->
+<!-- Default CSS Design: -->
+<!-- area {display: none;} -->
+
+
+
+<!-- <article> defines an article -->
+<article>
+<h2>Google Chrome</h2>
+<p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+</article>
+<!-- Default CSS Design: -->
+<!-- article {display: block;} -->
+
+
+
+<!-- <aside> defines content aside from the page content -->
+<aside>
+  <h4>Epcot Center</h4>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+<!-- Default CSS Design: -->
+<!-- aside {display: block;} -->
+
+
+
+<!-- <audio> defines embedded sound content -->
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+<!-- Tag atributes: -->
+<!-- autoplay=autoplay controls=controls loop=loop muted=muted preload=VALUE src=URL -->
+
+
+
+<!-- <p> defines bold text -->
+<p>This is normal text - <b>and this is bold text</b>.</p>
+<!-- Default CSS Design: -->
+<!-- b {font-weight: bold;} -->
+
+
+
+<!-- <base> specifies the base URL/target for all relative URLs in a document -->
+<!-- <head><base href="http://www.tcarvi.com/" target="_blank"></head> -->
+<!-- Tag atributes: -->
+<!-- href=URL target=VALUE -->
+
+
+
+<!-- <bdi> isolates a part of text that might be formatted in a different direction from other text outside it -->
+<ul>
+  <li>User <bdi>hrefs</bdi>: 60 points</li>
+  <li>User <bdi>jdoe</bdi>: 80 points</li>
+  <li>User <bdi>إيان</bdi>: 90 points</li>
+</ul>
+
+
+
+<!-- <bdo> overrides the current text direction -->
+<bdo dir="rtl">
+This text will go right-to-left.
+</bdo>
+<!-- Default CSS Design: -->
+<!-- bdo {unicode-bidi: bidi-override;} -->
+
+
+
+<!-- <blockquote> defines a section that is quoted from another source -->
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+</blockquote>
+<!-- Default CSS Design: -->
+<!-- blockquote {display: block; margin-top: 1em; margin-bottom: 1em; margin-left: 40px; margin-right: 40px;} -->
+
+
+
+<!-- <body> defines the document's body -->
+<!-- <body></body> -->
+<!-- Default CSS Design: -->
+<!-- body {display: block; margin: 8px;} -->
+<!-- body:focus {outline: none;} -->
+
+
+
+<!-- <br> defines a single line break -->
+<p>To force<br> line breaks<br> in a text,<br> use the br<br> element.</p>
+
+
+
+<!-- <button> defines a clickable button -->
+<button></button>
+<!-- Tag atributes: -->
+<!-- autofocus=autofocus disabled=disabled form=form_id formaction=URL formenctype=VALUE formmethod=VALUE formnovalidate=formnovalidate formtarget=VALUE name=name type=VALUE value=text -->
+
+
+
+<!-- <canvas> is used to draw graphics, on the fly, via scripting (usually JavaScript) -->
+<canvas id="myCanvas">
+Your browser does not support the canvas tag.
+</canvas>
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(0, 0, 80, 80);
+</script>
+<!-- Tag atributes: -->
+<!-- height=pixels width=pixels -->
+<!-- Default CSS Design: -->
+<!-- canvas {height: 150px;width: 300px;} -->
+
+<!-- <caption> defines a table caption -->
+<table>
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+</table>
+<!-- Default CSS Design: -->
+<!-- caption {display: table-caption; text-align: center;} -->
+
+<!-- <cite> defines the title of a work -->
+<p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+<!-- Default CSS Design: -->
+<!-- cite {font-style: italic;} -->
+
+
+
+<!-- <code> defines a piece of computer code -->
+<p>The CSS <code>background-color</code> property defines the background color of an element.</p>
+<!-- Default CSS Design: -->
+<!-- code {font-family: monospace;} -->
+
+
+
+<!-- <col> specifies column properties for each column within a <colgroup> element  -->
+<table>
+  <colgroup>
+    <col span="2" style="background-color:red">
+    <col style="background-color:yellow">
+  </colgroup>
+  <tr>
+    <th>ISBN</th>
+    <th>Title</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>3476896</td>
+    <td>My first HTML</td>
+    <td>$53</td>
+  </tr>
+</table>
+<!-- Default CSS Design: -->
+<!-- col {display: table-column;} -->
+
+
+
+<!-- <colgroup> specifies a group of one or more columns in a table for formatting -->
+<table>
+  <colgroup>
+    <col span="2" style="background-color:red">
+    <col style="background-color:yellow">
+  </colgroup>
+  <tr>
+    <th>ISBN</th>
+    <th>Title</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>3476896</td>
+    <td>My first HTML</td>
+    <td>$53</td>
+  </tr>
+</table>
+<!-- Default CSS Design: -->
+<!-- colgroup {display: table-column-group;} -->
+
+
+
+<!-- <data> adds a machine-readable translation of a given content -->
+<ul>
+  <li><data value="21053">Cherry Tomato</data></li>
+  <li><data value="21054">Beef Tomato</data></li>
+  <li><data value="21055">Snack Tomato</data></li>
+</ul>
+<!-- Tag atributes: -->
+<!-- value=machine-readable_format -->
+
+
+
+<!-- <datalist> specifies a list of pre-defined options for input controls -->
+<label for="browser">Choose your browser from the list:</label>
+<input list="browsers" name="browser" id="browser">
+<datalist id="browsers">
+  <option value="Edge">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+<!-- Tag atributes: -->
+<!-- value=machine-readable_format -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <dd> defines a description/value of a term in a description list -->
+<dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <del> defines text that has been deleted from a document -->
+<p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <details> defines additional details that the user can view or hide -->
+<details>
+  <summary>Epcot Center</summary>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</details>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <dfn> specifies a term that is going to be defined within the content -->
+<p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <dialog> defines a dialog box or window -->
+<dialog open>This is an open dialog window</dialog>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <div> defines a section in a document -->
+<div class="myDiv">
+  <h2>This is a heading in a div element</h2>
+  <p>This is some text in a div element.</p>
+</div>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <dl> defines a description list -->
+<dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <dt> defines a term/name in a description list -->
+<dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <em> defines emphasized text -->
+<p>You <em>have</em> to hurry up!</p>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <embed> defines a container for an external application -->
+<embed type="image/jpg" src="pic_trulli.jpg" width="300" height="200">
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <fieldset> groups related elements in a form -->
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <figcaption> defines a caption for a <figure> element -->
+<figure>
+  <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <figure> specifies self-contained content -->
+<figure>
+  <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <footer> defines a footer for a document or section -->
+<footer>
+  <p>Author: Hege Refsnes</p>
+  <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <form> defines an HTML form for user input -->
+<form action="/action_page.php" method="get">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <h#> defines HTML headings -->
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <head> contains metadata/information for the document -->
+<!-- <!DOCTYPE html><html lang="en"><head><title>Title of the document</title></head><body></body></html> -->
+
+
+
+<!-- <header> defines a header for a document or section -->
+<article>
+  <header>
+    <h1>A heading here</h1>
+    <p>Posted by John Doe</p>
+    <p>Some additional information here</p>
+  </header>
+  <p>Lorem Ipsum dolor set amet....</p>
+</article>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <hr> defines a thematic change in the content -->
+<p>HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page, and consists of a series of elements. HTML elements tell the browser how to display the content.</p>
+<hr>
+<p>CSS is a language that describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work, because it can control the layout of multiple web pages all at once.</p>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <html> defines the root of an HTML document -->
+<!--
+<html lang=“fr">
+<html lang=“pt-br”>
+<html lang=“en">
+<html lang=“es">
+<html lang=“de">
+<html lang=“it">
+-->
+<!-- Default CSS Design: -->
+<!-- html {display: block;} -->
+<!-- html:focus {outline: none;} -->
+
+
+
+<!-- <i> defines a part of text in an alternate voice or mood -->
+<p><i>Lorem ipsum</i> is the most popular filler text in history.</p>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <iframe> defines an inline frame -->
+<iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials"></iframe>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <img> defines an image -->
+<!--
+<img src="dog.jpg" alt="Dog with a bell attached to its collar.” title="Tulips from woodburn tulip festival”>
+Path to an image file within your Web site: src=“images/image-with-relative-url.png”. images folder of the root of html page.
+Path to an image file that resides elsewhere on the Web: src=“http://www.example.com/image-with-absolute-url.png”
+If the image is purely for presentation or decoration purposes, you should leave alt empty - <img alt="">. Assistive technology will then ignore this content.
+The width and height attributes can be used to resize the image in pixels without using an external editor.
+Use height="173" width=“262" inside css files.
+SVG (Scalable Vector Graphics) are defined mathematically and support animation. Also, since they are defined mathematically  they scale to any size without worrying about pixels, resolution or image data. This makes SVG images an excellent format to use, if possible. SVG is great for charts, graphs, maps, geometric shapes, and line based illustrations.  SVG is also a markup language in its own right and is very similar to HTML.  Typically it is created with vector graphic software (like Inkscape, Adobe Illustrator, and others https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Tools_for_SVG), but some people write the markup by hand. Note that SVG 1.1 is a W3C recommendation (https://www.w3.org/TR/SVG/).
+-->
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <input> defines an input control -->
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <ins> defines a text that has been inserted into a document -->
+<p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <kbd> defines keyboard input -->
+<p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <label> defines a label for an <input> element -->
+<form action="/action_page.php">
+  <label for="male">Male</label>
+  <input type="radio" name="gender" id="male" value="male"><br>
+  <label for="female">Female</label>
+  <input type="radio" name="gender" id="female" value="female"><br>
+  <label for="other">Other</label>
+  <input type="radio" name="gender" id="other" value="other"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <legend> defines a caption for a <fieldset> element -->
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <li> defines a list item -->
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <link> defines the relationship between a document and an external resource (most used to link to style sheets) -->
+<!-- <head><link rel="stylesheet" href="styles.css"></head> -->
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <main> specifies the main content of a document -->
+<main>
+  <h1>Most Popular Browsers</h1>
+  <p>Chrome, Firefox, and Edge are the most used browsers today.</p>
+</main>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <map> defines an image map -->
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- Defines marked/highlighted text -->
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <meta> defines metadata about an HTML document -->
+<!-- <head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head> -->
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <meter> defines a scalar measurement within a known range (a gauge) -->
+<label for="disk_c">Disk usage C:</label>
+<meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <nav> defines navigation links -->
+<nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/python/">Python</a>
+</nav>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <noscript> defines an alternate content for users that do not support client-side scripts -->
+<script>
+document.write("Hello World!")
+</script>
+<noscript>Your browser does not support JavaScript!</noscript>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <object> defines a container for an external application -->
+<object data="pic_trulli.jpg" width="300" height="200"></object>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <ol> defines an ordered list -->
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<ol start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <optgroup> defines a group of related options in a drop-down list -->
+<label for="cars">Choose a car:</label>
+<select  name="cars" id="cars">
+  <optgroup label="Swedish Cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+  </optgroup>
+  <optgroup label="German Cars">
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </optgroup>
+</select>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <option> defines an option in a drop-down list -->
+<label for="cars">Choose a car:</label>
+<select id="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="opel">Opel</option>
+  <option value="audi">Audi</option>
+</select>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <output> defines the result of a calculation -->
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  <input type="range" id="a" value="50">
+  +<input type="number" id="b" value="25">
+  =<output name="x" for="a b"></output>
+</form>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <p> defines a paragraph -->
+<p>This is some text in a paragraph.</p>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <param> defines a parameter for an object -->
+<object data="horse.wav">
+  <param name="autoplay" value="true">
+</object>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <picture> defines a container for multiple image resources -->
+<picture>
+  <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+  <source media="(min-width:465px)" srcset="img_white_flower.jpg">
+  <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <pre> defines preformatted text -->
+<pre>
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks
+</pre>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <progress> represents the progress of a task -->
+<label for="file">Downloading progress:</label>
+<progress id="file" value="32" max="100"> 32% </progress>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <q> defines a short quotation -->
+<p>WWF's goal is to:
+<q>Build a future where people live in harmony with nature.</q>
+We hope they succeed.</p>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <rp> defines what to show in browsers that do not support ruby annotations -->
+<ruby>
+漢 <rt><rp>(</rp>ㄏㄢˋ<rp>)</rp></rt>
+</ruby>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <rt> defines an explanation/pronunciation of characters (for East Asian typography) -->
+<ruby>
+漢 <rt> ㄏㄢˋ </rt>
+</ruby>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <ruby> defines a ruby annotation (for East Asian typography) -->
+<ruby>
+漢 <rt> ㄏㄢˋ </rt>
+</ruby>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <s> defines text that is no longer correct -->
+<p><s>Only 50 tickets left!</s></p>
+<p>SOLD OUT!</p>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <samp> defines sample output from a computer program -->
+<p>Message from my computer:</p>
+<p><samp>File not found.<br>Press F1 to continue</samp></p>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <script> defines a client-side script -->
+<!-- <script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script> -->
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <section> defines a section in a document -->
+<section>
+<h2>WWF History</h2>
+<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+</section>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <select> defines a drop-down list -->
+<label for="cars">Choose a car:</label>
+<select name="cars" id="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <small> defines smaller text -->
+<p>This is some normal text.</p>
+<p><small>This is some smaller text.</small></p>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <source> defines multiple media resources for media elements (<video> and <audio>) -->
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <span> defines a section in a document -->
+<p>My mother has <span style="color:blue">blue</span> eyes.</p>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <strong> defines important text -->
+<strong>This text is important!</strong>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <style> defines style information for a document -->
+<!-- <head><style>h1 {color:red;}</style></head> -->
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <sub> defines subscripted text -->
+<p>This text contains <sub>subscript</sub> text.</p>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <summary> defines a visible heading for a <details> element -->
+<details>
+  <summary>Epcot Center</summary>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</details>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <sup> defines superscripted text -->
+<p>This text contains <sup>superscript</sup> text.</p>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <svg> defines a container for SVG graphics -->
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+</svg>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <table> defines a table -->
+<table>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+</table>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <tbody> groups the body content in a table -->
+<table>
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$80</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Sum</td>
+      <td>$180</td>
+    </tr>
+  </tfoot>
+</table>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <td> defines a cell in a table -->
+<table>
+  <tr>
+    <td>Cell A</td>
+    <td>Cell B</td>
+  </tr>
+  <tr>
+    <td>Cell C</td>
+    <td>Cell D</td>
+  </tr>
+</table>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <template> defines a container for content that should be hidden when the page loads -->
+<button onclick="showContent()">Show hidden content</button>
+<template>
+  <h2>Flower</h2>
+  <img src="img_white_flower.jpg" width="214" height="204">
+</template>
+<script>
+function showContent() {
+  var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <textarea> defines a multiline input control (text area) -->
+<label for="w3review">Review of W3Schools:</label>
+<textarea id="w3review" name="w3review" rows="4" cols="50">
+At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+</textarea>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <tfoot> groups the footer content in a table -->
+<table>
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$80</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Sum</td>
+      <td>$180</td>
+    </tr>
+  </tfoot>
+</table>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <th> defines a header cell in a table -->
+<table>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$80</td>
+  </tr>
+</table>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <thead> groups the header content in a table -->
+<table>
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$80</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Sum</td>
+      <td>$180</td>
+    </tr>
+  </tfoot>
+</table>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <time> defines a specific time (or datetime) -->
+<p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+<p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <title> defines a title for the document -->
+<!-- <head><title>HTML Elements Reference</title></head> -->
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <tr> defines a row in a table -->
+<table>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$80</td>
+  </tr>
+</table>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <track> defines text tracks for media elements (<video> and <audio>) -->
+<video width="320" height="240" controls>
+  <source src="forrest_gump.mp4" type="video/mp4">
+  <source src="forrest_gump.ogg" type="video/ogg">
+  <track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+  <track src="fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+</video>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <u> defines some text that is unarticulated and styled differently from normal text -->
+<p>This is some <u>mispeled</u> text.</p>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <ul> defines an unordered list -->
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <var> defines a variable -->
+<p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <video> defines embedded video content -->
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
+
+
+
+<!-- <wbr> defines a possible line-break -->
+<p>To learn AJAX, you must be familiar with the XML<wbr>Http<wbr>Request Object.</p>
+<!-- Tag atributes: -->
+<!-- -->
+<!-- Default CSS Design: -->
+<!-- -->
